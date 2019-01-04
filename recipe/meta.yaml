@@ -1,6 +1,6 @@
 {% set name = "robotframework-seleniumlibrary" %}
-{% set version = "3.3.0" %}
-{% set sha256 = "aad9985cc4e04549fd8faee012eed8fc6eaab11abd6dd984673fb12975aa38fb" %}
+{% set version = "3.3.1" %}
+{% set sha256 = "6f3a0eba3f0a4f9b10d3271420f4430cc9e8230cc25e3deaa469d533d872a10f" %}
 
 package:
   name: {{ name }}

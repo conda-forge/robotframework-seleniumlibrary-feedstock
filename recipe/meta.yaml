@@ -1,29 +1,27 @@
 {% set name = "robotframework-seleniumlibrary" %}
 {% set version = "4.0.0" %}
-{% set sha256 = "fd601ce4937b4ceb77323a4ee658791dec2f85a6d21c7143d00515db68afb64a" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: fd601ce4937b4ceb77323a4ee658791dec2f85a6d21c7143d00515db68afb64a
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv
 
 requirements:
-  build:
+  host:
     - python
     - pip
   run:
     - python
-    - selenium >=2.53.6
-    - robotframework >=2.8.7
+    - selenium >=3.8.1
+    - robotframework >=3.0.4
 
 test:
   imports:
@@ -35,7 +33,7 @@ about:
   license_family: Apache
   license_file: LICENSE.txt
   summary: Web testing library for Robot Framework
-  doc_url: http://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
+  doc_url: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
   dev_url: https://github.com/robotframework/SeleniumLibrary
   description: |
     SeleniumLibrary is a web testing library for Robot Framework that utilizes

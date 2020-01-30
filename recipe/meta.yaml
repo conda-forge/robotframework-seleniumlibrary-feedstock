@@ -1,5 +1,5 @@
 {% set name = "robotframework-seleniumlibrary" %}
-{% set version = "4.1.0" %}
+{% set version = "4.2.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f45cf8d52265a416cb7f2568ca6201068f178eff9050fab01adde14bb8633314
+  sha256: 7004feaa0e0f66013c877470078ea4fa65ac07f65023a95d91c51a9618abbf07
 
 build:
   noarch: python

@@ -21,11 +21,15 @@ requirements:
   run:
     - python
     - selenium >=3.141.0
-    - robotframework >=3.0.4
+    - robotframework >=3.1.2
 
 test:
+  requires:
+    - pip
   imports:
     - SeleniumLibrary
+  commands:
+    - python -m pip check
 
 about:
   home: https://github.com/robotframework/SeleniumLibrary

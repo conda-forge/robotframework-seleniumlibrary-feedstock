@@ -16,12 +16,13 @@ build:
 
 requirements:
   host:
-    - python
     - pip
+    - python
   run:
     - python
-    - selenium >=3.141.0
-    - robotframework >=3.1.2
+    - robotframework >= 3.1.2
+    - robotframework-pythonlibcore >= 2.1.0
+    - selenium >= 3.141.0
 
 test:
   requires:
@@ -44,11 +45,10 @@ about:
     the Selenium tool internally. The project is hosted on GitHub and downloads
     can be found from PyPI.
 
-    SeleniumLibrary works with Selenium 2.53.6 or newer, including Selenium 3.
-    It supports Python 2.7 as well as Python 3.3 or newer. In addition to the
-    normal Python interpreter, it works also with PyPy and Jython.
-    Unfortunately Selenium is not currently supported by IronPython and thus
-    this library does not work with IronPython either.
+    SeleniumLibrary works with Selenium 3 and 4. It supports Python 2.7 as well
+    as Python 3.6 or newer. In addition to the normal Python interpreter, it works
+    also with PyPy and Jython. Unfortunately Selenium is not currently supported
+    by IronPython and thus this library does not work with IronPython either.
 
 extra:
   recipe-maintainers:

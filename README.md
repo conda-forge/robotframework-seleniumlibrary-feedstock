@@ -5,19 +5,22 @@ Home: https://github.com/robotframework/SeleniumLibrary
 
 Package license: Apache-2.0
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/robotframework-seleniumlibrary-feedstock/blob/master/LICENSE.txt)
 
 Summary: Web testing library for Robot Framework
+
+Development: https://github.com/robotframework/SeleniumLibrary
+
+Documentation: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
 
 SeleniumLibrary is a web testing library for Robot Framework that utilizes
 the Selenium tool internally. The project is hosted on GitHub and downloads
 can be found from PyPI.
 
-SeleniumLibrary works with Selenium 2.53.6 or newer, including Selenium 3.
-It supports Python 2.7 as well as Python 3.3 or newer. In addition to the
-normal Python interpreter, it works also with PyPy and Jython.
-Unfortunately Selenium is not currently supported by IronPython and thus
-this library does not work with IronPython either.
+SeleniumLibrary works with Selenium 3 and 4. It supports Python 2.7 as well
+as Python 3.6 or newer. In addition to the normal Python interpreter, it works
+also with PyPy and Jython. Unfortunately Selenium is not currently supported
+by IronPython and thus this library does not work with IronPython either.
 
 
 Current build status

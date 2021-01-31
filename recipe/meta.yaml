@@ -11,15 +11,15 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install --no-deps --ignore-installed . -vv
 
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6,<4
   run:
-    - python
+    - python >=3.6,<4
     - robotframework >=3.1.2
     - robotframework-pythonlibcore >=2.1.0
     - selenium >=3.141.0
@@ -36,7 +36,9 @@ about:
   home: https://github.com/robotframework/SeleniumLibrary
   license: Apache-2.0
   license_family: Apache
-  license_file: LICENSE.txt
+  license_file:
+    - LICENSE.txt
+    - COPYRIGHT.txt
   summary: Web testing library for Robot Framework
   doc_url: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
   dev_url: https://github.com/robotframework/SeleniumLibrary

@@ -10,8 +10,8 @@ source:
 
 build:
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install -vv --no-deps --ignore-installed --no-build-isolation . 
+  number: 1
+  script: {{ PYTHON }} -m pip install -vv --no-deps --ignore-installed --no-build-isolation .
 
 requirements:
   host:
@@ -21,7 +21,8 @@ requirements:
     - python >=3.6
     - robotframework >=4.1.3
     - robotframework-pythonlibcore >=3.0.0
-    - selenium >=4.0.0
+    # TODO: remove after https://github.com/robotframework/SeleniumLibrary/issues/1836
+    - selenium >=4.0.0,<4.10
 
 test:
   requires:
@@ -42,11 +43,11 @@ about:
   doc_url: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
   dev_url: https://github.com/robotframework/SeleniumLibrary
   description: |
-    SeleniumLibrary is a web testing library for Robot Framework that utilizes 
-    the Selenium tool internally. The project is hosted on GitHub and downloads 
+    SeleniumLibrary is a web testing library for Robot Framework that utilizes
+    the Selenium tool internally. The project is hosted on GitHub and downloads
     can be found from PyPI.
 
-    SeleniumLibrary works with Selenium 3 and 4. It supports Python 3.6 or newer. 
+    SeleniumLibrary works with Selenium 3 and 4. It supports Python 3.6 or newer.
     In addition to the normal Python interpreter, it works also with PyPy.
 
 extra:

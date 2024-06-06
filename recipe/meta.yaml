@@ -1,12 +1,12 @@
-{% set version = "6.3.0" %}
+{% set version = "6.4.0" %}
 
 package:
   name: robotframework-seleniumlibrary
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/r/robotframework-seleniumlibrary/robotframework-seleniumlibrary-{{ version }}.tar.gz
-  sha256: 5846f5ca4f1729567f9c8b10a3bb191601c654e6c04b952194310434da8e6826
+  url: https://pypi.io/packages/source/r/robotframework-seleniumlibrary/robotframework_seleniumlibrary-{{ version }}.tar.gz
+  sha256: 2e39796d184cb237e3891bd7a4daad443ed500d36d3e921249082e2fd774c507
 
 build:
   noarch: python
@@ -16,9 +16,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.7,<3.12
   run:
-    - python >=3.7
+    - python >=3.7,<3.12
     - robotframework >=4.1.3
     - robotframework-pythonlibcore >=3.0.0
     - selenium >=4.3.0

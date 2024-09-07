@@ -12,15 +12,18 @@ build:
   noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install -vv --no-deps --ignore-installed --no-build-isolation .
+  entry_points:
+    - selib=SeleniumLibrary.entry.__main__:cli
 
 requirements:
   host:
     - pip
-    - python >=3.7,<3.12
+    - python >=3.8
   run:
-    - python >=3.7,<3.12
+    - click >=8.1.7
+    - python >=3.8
     - robotframework >=4.1.3
-    - robotframework-pythonlibcore >=3.0.0
+    - robotframework-pythonlibcore >=4.4.1
     - selenium >=4.3.0
 
 test:
@@ -30,6 +33,8 @@ test:
     - SeleniumLibrary
   commands:
     - python -m pip check
+    - selib --version
+    - selib --help
 
 about:
   home: https://github.com/robotframework/SeleniumLibrary
@@ -40,7 +45,6 @@ about:
     - COPYRIGHT.txt
   summary: Web testing library for Robot Framework
   doc_url: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
-  dev_url: https://github.com/robotframework/SeleniumLibrary
   description: |
     SeleniumLibrary is a web testing library for Robot Framework that utilizes
     the Selenium tool internally. The project is hosted on GitHub and downloads

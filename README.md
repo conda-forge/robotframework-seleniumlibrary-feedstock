@@ -9,8 +9,6 @@ Package license: Apache-2.0
 
 Summary: Web testing library for Robot Framework
 
-Development: https://github.com/robotframework/SeleniumLibrary
-
 Documentation: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
 
 SeleniumLibrary is a web testing library for Robot Framework that utilizes

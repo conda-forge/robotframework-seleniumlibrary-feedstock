@@ -1,4 +1,4 @@
-{% set version = "6.6.1" %}
+{% set version = "6.7.0" %}
 
 package:
   name: robotframework-seleniumlibrary
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/robotframework-seleniumlibrary/robotframework_seleniumlibrary-{{ version }}.tar.gz
-  sha256: 6fd3a20c0ca70425d2c4b89e372d2c2399aa059a815c8cab87a2616bcfece7b4
+  sha256: 9def0f81d5437604f5f3c3ff6b328fcb3dac888547d39bbb8624440d55114285
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install -vv --no-deps --no-build-isolation .
   entry_points:
     - selib=SeleniumLibrary.entry.__main__:cli

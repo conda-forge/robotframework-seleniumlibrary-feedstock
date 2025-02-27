@@ -18,7 +18,6 @@ can be found from PyPI.
 SeleniumLibrary works with Selenium 3 and 4. It supports Python 3.6 or newer.
 In addition to the normal Python interpreter, it works also with PyPy.
 
-
 Current build status
 ====================
 

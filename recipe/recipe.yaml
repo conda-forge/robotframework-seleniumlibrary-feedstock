@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: 6.7.1
+  version: "6.8.0"
 
 package:
   name: robotframework-seleniumlibrary
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/r/robotframework-seleniumlibrary/robotframework_seleniumlibrary-${{ version }}.tar.gz
-  sha256: 3f3aaf7d683b3d619de0ce4849ff9ac33117dd8630f4d7528b4bf0a6d06d6616
+  sha256: 60fb0584b11eabc687e8433134093b764ec011e0e8a9ec417bfdeeab59d748bb
 
 build:
   number: 0

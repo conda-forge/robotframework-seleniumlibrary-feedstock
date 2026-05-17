@@ -3,11 +3,13 @@ About robotframework-seleniumlibrary-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/robotframework-seleniumlibrary-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/robotframework/SeleniumLibrary
+Home: https://pypi.org/project/robotframework-seleniumlibrary
 
 Package license: Apache-2.0
 
 Summary: Web testing library for Robot Framework
+
+Development: https://github.com/robotframework/SeleniumLibrary
 
 Documentation: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
 
